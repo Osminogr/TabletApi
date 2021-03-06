@@ -1,0 +1,39 @@
+Req's format:
+    http://server.domen/api/users/phone
+Methods:
+    GET: 
+        using primaty_key(phone) you can get user info from the server.
+        link: http://46.107.167.149/api/users/89036419972
+    
+    POST:
+        for creating users u need to use POST req with JSON data in format like:
+
+        {
+            "user": {
+                "name": "Eugeny Erokhin",
+                "phone": "9036419972",
+                "is_online": false,
+                "is_driver": true,
+                "card": "1234567890123456",
+                "cvv": "777",
+                "carddate": "1220",
+                "x": 0.0,
+                "y": 0.0,
+                "pass_date": "smth",
+                "balance": 1000,
+                "company": "OOO \"SMTH\""
+            }
+        }
+        link: http://46.107.167.149/api/users/
+
+    PUT: 
+        Like POST but for updating data:
+        {
+            "user": {
+                "is_online": true,
+            }
+        }
+        link: http://46.107.167.149/api/users/89036419972
+    DELETE:
+        Delete user by primaty_key
+        link: http://46.107.167.149/api/users/89036419972
