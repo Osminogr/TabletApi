@@ -115,12 +115,11 @@ USE_L10N = True
 
 USE_TZ = True
 
+STATIC_ROOT = '/home/ubuntu/static'
+STATIC_URL = 'static/'
+MEDIA_ROOT = '/home/ubuntu/media'
 
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/3.1/howto/static-files/
-PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
-STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(PROJECT_ROOT, 'static/')
+
 REST_FRAMEWORK = {
 'DEFAULT_AUTHENTICATION_CLASSES': (
     'rest_framework.authentication.TokenAuthentication',
